@@ -1,0 +1,74 @@
+.task {
+	background-color: var(--gray-400);
+	color: var(--gray-100);
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 8px;
+	gap: 0.75rem;
+}
+
+.completedIcon {
+	color: var(--purple-500);
+	transition: color ease 120ms;
+}
+
+.completedIcon:hover {
+	cursor: pointer;
+	color: var(--purple-700);
+}
+
+.notCompletedIcon {
+	color: var(--blue-500);
+	transition: color ease 120ms;
+}
+.notCompletedIcon:hover {
+	cursor: pointer;
+	color: var(--blue-700);
+}
+
+.completedText {
+	flex: 1;
+	text-decoration: line-through;
+	color: var(--gray-300);
+}
+
+.notCompletedText {
+	flex: 1;
+	color: var(--gray-100);
+}
+
+.deleteTaskButton {
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	border-radius: 8px;
+	border: none;
+	background: transparent;
+}
+
+.deleteTaskButton:hover {
+	cursor: pointer;
+}
+
+.deleteTaskButton svg {
+	color: var(--gray-300);
+	transition: color ease 120ms;
+}
+
+.deleteTaskButton:hover svg {
+	color: var(--danger-500);
+}
+
+.toggleTaskCompletionButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	border-radius: 50%;
+	border: none;
+	background: transparent;
+}
